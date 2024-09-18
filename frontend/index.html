@@ -10,6 +10,7 @@
 <body>
 
     <section class= "container">
+        <!-- Seção de Login -->
         <section class = "login">
             <h2>Digite seu Nome</h2>
             <form class ="login__form">
@@ -18,28 +19,30 @@
             </form>
         </section>
 
+        <!-- Seção de Chat -->
         <section class="chat">
             <section class="chat__messages">
-
-                <!-- <div class="message--self">Hello World</div>
-                <div class="message--other">
-                    <span class="message--sender"> Manual do Dev</span>
-                    Olá Mundo!
-                </div> -->
             </section>
 
+            <!-- Formulário de Mensagens -->
             <form class ="chat__form">
                 <input type="text" class = "chat__input" placeholder="Digite sua mensagem" required />
                 <button type="submit" class=" chat__button">
                     <span class="material-symbols-outlined">send</span>
                 </button>
             </form>
+
+            <!-- Campo de Busca para GIFs -->
+            <div class="giphy-search">
+                <input type="text" id="giphyInput" placeholder="Buscar GIFs">
+                <button id="giphySearchButton">Buscar GIFs</button>
+            </div>
+
+            <!-- Exibição dos Resultados da Busca de GIFs -->
+            <div id="giphyResults" class="giphy-results"></div>
+        </section>
+
     </section>
-
-
-    </section>
-
-    
 
     <script src= "./js/script.js"></script>
 </body>
